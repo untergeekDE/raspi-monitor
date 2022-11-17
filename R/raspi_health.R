@@ -121,7 +121,7 @@ write_csv(updated_df,log_fname)
 dw_data_to_chart(updated_df %>% 
                    filter(zeitstempel > (stats_df$zeitstempel - hours(24))),
                                          "tegVD")
-dw_edit_chart("Y5843",title=stats_df$zeitstempel)
-dw_publish_chart("Y5843")
+dw_edit_chart("tegVD",title=stats_df$zeitstempel)
+dw_publish_chart("tegVD")
 
 cat("Fertig.")
