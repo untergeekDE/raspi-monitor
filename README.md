@@ -8,6 +8,12 @@ Kleiner Health-Monitor für den Raspi. Dient dazu, die üblichen R-Tools auch au
 - Mach ein wenig Logfile-Management (zu große Files archivieren und löschen)
 - Gib zwei Grafiken in Datawrapper aus
 
+# Was das Skript braucht
+
+- Einen Datawrapper-Key als Textdateiatei ~/key/dw.key
+- Die Datawrapper-Grafiken Y5843 (aktuell) und tegVD (Verlauf 24h) in meinem Account
+- Platz für eine Logdatei
+
 ## Erhobene Systemdaten
 
 kommen außer der Temperatur aus Linux-Standardbefehlen:

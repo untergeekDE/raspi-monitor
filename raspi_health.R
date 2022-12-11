@@ -17,7 +17,7 @@ library(DatawRappr)
 
 #---- Funktionen zum Extrahieren der Health-daten
 
-log_fname <- "logs/health_log.csv"
+log_fname <- "~/logs/health_log.csv"
 
 
 get_temperature_df <- function() {
@@ -106,7 +106,7 @@ dw_edit_chart("Y5843",title=stats_df$zeitstempel)
 dw_publish_chart("Y5843")
 
 # Logdatei fortschreiben
-if (!dir.exists("logs")) dir.create("logs")
+if (!dir.exists("~/logs")) dir.create("~/logs")
 if (file.exists(log_fname)) {
   updated_df <- read_csv(log_fname) %>% 
     bind_rows(stats_df) %>% 
